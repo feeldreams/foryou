@@ -1,6 +1,7 @@
 <html><meta charset='UTF-8'/><meta content='width=device-width, initial-scale=1, user-scalable=1, minimum-scale=1, maximum-scale=5' name='viewport'/><meta content='IE=edge' http-equiv='X-UA-Compatible'/>
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet"><script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.19/dist/sweetalert2.all.min.js"></script><script src="https://kit.fontawesome.com/4f3ce16e3e.js" crossorigin="anonymous"></script>
 <!--<link href="https://drive.google.com/uc?export=view&id=" rel="stylesheet" type="text/css" /><script src="https://sesibuk.feeldream.repl.co/script.js"></script>-->
+<link href="https://Blog.feeldream.repl.co/style.css" rel="stylesheet" type="text/css" />
 <head>
 <title>Script HTML</title>
 <!-- 
@@ -128,8 +129,13 @@ p{color:var(--warna-teks);font-size:16px;font-weight:400;line-height:1.4em;margi
      </div>
      
    </div>
-
+<div class='sticky-ad' id='sticky-ad'>
+ <div class='adB'><a rel="dofollow" href='https://youtu.be/ZcwaCS1tCh0'>Lihat Cara Buatnya di Sini!</a></div>
+<button aria-label='Close this ad' class='sticky-ad-close-button' onclick='hilangkan();'/>
+</div>
 <!-- Jangan Edit Bagian Ini --><script>
+  function tunjukkan(){document.getElementById("sticky-ad").style = "bottom: 0px";}
+  function hilangkan() {document.getElementById("sticky-ad").style = "bottom: -130px";}
   function showDiv() {Content.style = "opacity:1;margin-top:15vh;";ket.style="margin-top:30px";}
   function memulai(){suratin.style="transition:all 1s ease;transform:scale(.1);opacity:0";ket.style="transition:all 1s ease;transform:scale(.1);opacity:0";setTimeout(pesan,300)}
   function kpemb() {bodyblur.style="opacity:.7;animation:none";beneranblur.style="-webkit-backdrop-filter:blur(5px); backdrop-filter:blur(5px)";wallpaper.style="transform: scale(1.8)";suratin.style="display:none";ket.style="display:none";fotoakhir.style="display:inline-flex;";setTimeout(ftmuncul,100);Content.style = "opacity:1;margin-top:2vh;";bq.style = "opacity:1;visibility:visible;margin-top:5px";setTimeout(ngetik,500)}
@@ -145,7 +151,7 @@ p{color:var(--warna-teks);font-size:16px;font-weight:400;line-height:1.4em;margi
   var ai=0,katangetik2;function ngetik2() {if(ai<katangetik2.length){kalimatc.innerHTML += katangetik2.charAt(ai);ai++;setTimeout(ngetik2,100);} if(ai==katangetik2.length){kalimatc.style.animation="rto 1s infinite alternate";setTimeout(stakhir,1000);}}
   function sbakhir(){kalimatc.style = "opacity:1;transform: scale(1);margin-top:30px";Bn.style.display="none";} function stakhir(){tmbl.innerHTML="Kirim Pesan";tmbl.style="font-size:12px";Tombol.style="margin-top:10px;opacity:1;transform: scale(1)";ftom=5;fungsi=0;}
   async function menuju(){await swals.fire('OK!', 'Kirim pesan ke WhatsApp aku, ya!', 'success');window.location = "https://api.whatsapp.com/send?phone=&text=" + pesanwhatsapp;Tombol.style="margin-top:15px;opacity:1;transform: scale(1);";} setTimeout(showDiv,100);
-  async function jawab(){setInterval(createHeart,200);bodyblur.style="opacity:.5;animation:none";beneranblur.style="-webkit-backdrop-filter:blur(2px); backdrop-filter:blur(2px)";wallpaper.style="transform: scale(1)";Tombol.style="opacity:0;transform: scale(.1);";setTimeout(sbakhir,3000);setTimeout(ngetik2,3100);otomatis2();}
+  async function jawab(){setTimeout(tunjukkan,2222);setInterval(createHeart,200);bodyblur.style="opacity:.5;animation:none";beneranblur.style="-webkit-backdrop-filter:blur(2px); backdrop-filter:blur(2px)";wallpaper.style="transform: scale(1)";Tombol.style="opacity:0;transform: scale(.1);";setTimeout(sbakhir,3000);setTimeout(ngetik2,3100);otomatis2();}
 
   flag=1;flagg=1;fungsi=0;
   function tolak(){
